@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+<variable
+    name="firstViewModel"
+    type="com.example.viewmodellearning.FirstViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".FirstFragment">
+
+        <TextView
+            android:id="@+id/first_fragment_tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/suez_one"
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_error"
+            android:textSize="20sp"
+            android:text="@{firstViewModel.message}"/>
+
+        <EditText
+            android:id="@+id/first_fragment_et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/name_hint"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColorHint="#78909C"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/first_fragment_btn_hello"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_hello_text" />
+
+        <Button
+            android:id="@+id/first_fragment_btn_goodbye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_goodbye_text" />
+
+        <Button
+            android:id="@+id/first_fragment_btn_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_end" />
+
+        <TextView
+            android:id="@+id/first_fragment_tv_clicks_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</layout>

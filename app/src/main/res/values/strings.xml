@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">View Model Learning</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">FIRST FRAGMENT</string>
+    <string name="name_hint">Enter your name...</string>
+    <string name="btn_hello_text">Hello</string>
+    <string name="btn_goodbye_text">Goodbye</string>
+    <string name="btn_end">End</string>
+    <string name="btn_text_back">Back</string>
+    <string name="btn_click_text">Keep Clicking!!</string>
+</resources>
